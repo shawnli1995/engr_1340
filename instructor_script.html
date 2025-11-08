@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Script: Portfolio Project</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: #fdfdfd;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px 40px 40px 40px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            color: #d9534f; /* Instructor Red */
+        }
+
+        h2 {
+            font-size: 1.75em;
+            color: #005a9c;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.25em;
+            color: #333;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 25px;
+            font-size: 1.05em;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #eef;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+
+        .concept-box {
+            background-color: #f4f8ff;
+            border: 1px solid #c9deff;
+            border-left: 5px solid #005a9c;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+            .concept-box strong {
+                color: #005a9c;
+                display: block;
+                font-size: 1.1em;
+                margin-bottom: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👨‍🏫 Instructor's Teaching Script</h1>
+        <h2>(The "Why" Behind the Handout)</h2>
+
+        <p><strong>Use this file to get a deeper understanding to the handout.</strong> </p>
+
+        <hr>
+
+        <h2>Introduction (5 Minutes)</h2>
+        <p>"Good morning, everyone. Over the next two classes, we're going to build your first complete website from scratch. We're starting with a Personal Portfolio. The reason we're doing this *before* Project 2 is that it's a more motivating and simple way to learn the core skills. You'll build something about *you*."</p>
+        <p>"The most important concept I want you to learn today is the <strong>'Skeleton and Skin'</strong> analogy."</p>
+        <ul>
+            <li><strong>HTML (HyperText Markup Language)</strong> is the <strong>SKELETON</strong>. It's the structure, the bones of the website. It's the <code>&lt;h1&gt;</code> heading, the <code>&lt;p&gt;</code> paragraph, the <code>&lt;img&gt;</code> image.</li>
+            <li><strong>CSS (Cascading Style Sheets)</strong> is the <strong>SKIN</strong>. It's the style, the paint, the clothes. It's the <code>color: blue</code>, the <code>font-family</code>, the <code>border-radius</code>.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Module 1: The "Skeleton" (HTML Content)</h2>
+        <p><strong>Goal:</strong> Explain the "what" and "why" of each core HTML tag.</p>
+
+        <h3>Step 1-3: Folders & Files</h3>
+        <div class="concept-box">
+            <strong>Why do we do this?</strong>
+            <p>We *always* start by making a single folder for our project. This keeps all our files—HTML, CSS, images—in one organized place. By opening the *folder* in VS Code, the sidebar will show our entire project structure, which makes it easy to navigate.</p>
+            <p><strong>Why <code>index.html</code>?</strong> This is a special, 'magic' filename. When a web server (like GitHub Pages) looks at a folder, it *automatically* looks for a file named <code>index.html</code> to show as the homepage. All your homepages must be named this.</p>
+        </div>
+
+        <h3>Step 4: The "Boilerplate"</h3>
+        <div class="concept-box">
+            <strong>What is this code?</strong>
+            <p>In your empty <code>index.html</code> file, typing <code>!</code> and hitting <code>Tab</code> is an 'Emmet' shortcut that gives us the basic HTML skeleton. Let's look at what it gave us:</p>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: This is a command. It tells the browser, "Hey, I'm an HTML5 document. Treat me as a modern webpage."</li>
+                <li><code>&lt;html lang="en"&gt;</code>: This is the root tag. Everything else lives inside this. <code>lang="en"</code> tells the browser this page is in English, which is good for accessibility and search engines.</li>
+                <li><code>&lt;head&gt;</code>: This is the <strong>'brain'</strong> of your website. You don't *see* the information in the <code>&lt;head&gt;</code>, but it's critical metadata.</li>
+                <li><code>&lt;meta charset="UTF-8"&gt;</code>: This tag sets the character encoding. It's what allows your webpage to use any character, symbol, or emoji from any language in the world.</li>
+                <li><code>&lt;meta name="viewport" ...&gt;</code>: This is one of the most important tags for the modern web. It tells the phone, "Make the webpage as wide as your screen," and "Don't zoom in." This is what makes your website look good on mobile.</li>
+            </ul>
+        </div>
+
+        <h3>Step 5: Change Your Title</h3>
+        <div class="concept-box">
+            <strong>Why <code>&lt;title&gt;</code>?</strong>
+            <p>This is the text that appears on the browser tab. It's also what Google uses as the main blue link in its search results. It's very important for Search Engine Optimization (SEO).</p>
+        </div>
+
+        <h3>Step 6: Add Your Main Heading</h3>
+        <div class="concept-box">
+            <strong>Why <code>&lt;h1&gt;</code>?</strong>
+            <p>This is a <strong>Heading 1</strong>. It's the most important heading on your page. You should <strong>only have one <code>&lt;h1&gt;</code> per page</strong>. It's the title, and search engines pay a lot of attention to it.</p>
+        </div>
+
+        <h3>Step 7: Add a Subheading</h3>
+        <div class="concept-box">
+            <strong>Why <code>&lt;h2&gt;</code>?</strong>
+            <p>This is a <strong>Heading 2</strong>, or a sub-heading. It's for section titles. You can have as many of these as you want. They create the document's outline. Notice it's slightly smaller than the <code>&lt;h1&gt;</code>.</p>
+        </div>
+
+        <h3>Step 8: Add a Paragraph</h3>
+        <div class="concept-box">
+            <strong>Why <code>&lt;p&gt;</code>?</strong>
+            <p>This is a <strong>Paragraph</strong> tag. This is the default tag for all your main text blocks. The browser automatically adds a bit of space (margin) before and after each paragraph.</p>
+        </div>
+
+        <h3>Step 9: Add a List</h3>
+        <div class="concept-box">
+            <strong>Why <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>?</strong>
+            <ul>
+                <li><code>&lt;ul&gt;</code>: This is an <strong>Unordered List</strong> tag. It doesn't mean a list in a random order; it just means a *bulleted* list. This tag is the *container* for the list items.</li>
+                <li><code>&lt;li&gt;</code>: This is a <strong>List Item</strong>. Each <code>&lt;li&gt;</code> is one bullet point. You can't have an <code>&lt;li&gt;</code> by itself; it must always be inside a <code>&lt;ul&gt;</code> or an <code>&lt;ol&gt;</code> (an Ordered, or numbered, List).</li>
+            </ul>
+        </div>
+        <p><strong>Checkpoint 1:</strong> "Look at your page. It's just black text on a white background. It's structured, but it's ugly. This is raw, unstyled HTML. We've successfully built the <strong>skeleton</strong>. Now, let's add the <strong>skin</strong>."</p>
+
+        <hr>
+
+        <h2>Module 2: The "Skin" (Basic CSS)</h2>
+        <p><strong>Goal:</strong> Explain CSS selectors, properties, and the "box model".</p>
+
+        <h3>Step 1-2: Create CSS Files</h3>
+        <div class="concept-box">
+            <strong>Why a separate folder?</strong>
+            <p>Organization. In a real project, you might have many stylesheets. We keep them all in a <code>css</code> folder. This is a best practice called "separation of concerns."</p>
+        </div>
+
+        <h3>Step 3: Link Your CSS</h3>
+        <div class="concept-box">
+            <strong>Why <code>&lt;link&gt;</code>?</strong>
+            <p>This is the <strong>bridge</strong> between your HTML and CSS. If this one line is wrong, *none* of your styles will show up. This is the #1 place students make a mistake.</p>
+            <ul>
+                <li><code>rel="stylesheet"</code>: <code>rel</code> stands for 'relationship.' This tells the browser *what* this file is.</li>
+                <li><code>href="css/styles.css"</code>: <code>href</code> is the 'hyperlink reference.' This is the *path* to the file. It tells the browser, "Look in the <code>css</code> folder, and find the file named <code>styles.css</code>."</li>
+            </ul>
+        </div>
+
+        <h3>Step 4: Test the Link</h3>
+        <div class="concept-box">
+            <strong>What is a CSS Rule?</strong>
+            <p><code>body { ... }</code> is your first <strong>CSS Rule</strong>. It has two parts:</p>
+            <ol>
+                <li><code>body</code> is the <strong>Selector</strong>. It says *who* we want to style.</li>
+                <li><code>{ ... }</code> The curly braces hold the <strong>Declarations</strong> (the styles).</li>
+            </ol>
+            <p><code>background-color: #f0f4f8;</code> is a Declaration. <code>background-color</code> is the <strong>Property</strong> (what to change), and <code>#f0f4f8</code> is the <strong>Value</strong> (what to change it to). This is a 'hex code' for a color—a light gray.</p>
+        </div>
+
+        <h3>Step 5: Improve the Font</h3>
+        <div class="concept-box">
+            <strong>Why these properties?</strong>
+            <ul>
+                <li><code>font-family: Arial, sans-serif;</code>: This is a 'font stack.' The browser tries to find Arial. If it can't, it finds the next one. <code>sans-serif</code> is the generic fallback.</li>
+                <li><code>line-height: 1.6;</code>: This controls the spacing *between* lines of text. 1.6 means "1.6 times the font size." It makes text much easier to read.</li>
+            </ul>
+        </div>
+
+        <h3>Step 6: Center Your Content</h3>
+        <div class="concept-box">
+            <strong>Why <code>&lt;div class="container"&gt;</code>?</strong>
+            <ul>
+                <li><code>&lt;div&gt;</code>: A <code>&lt;div&gt;</code> is the most basic, generic box in HTML. It doesn't *mean* anything—it's just a "division" or "container" we can use to group other elements.</li>
+                <li><code>class="container"</code>: A <code>class</code> is a *nickname*. We are giving this <code>&lt;div&gt;</code> the nickname "container." This lets us style *just this box* and any other element we give the same nickname.</li>
+            </ul>
+        </div>
+
+        <h3>Step 7: Style the Container</h3>
+        <div class="concept-box">
+            <strong>Why <code>.container</code>? (The "Box Model")</strong>
+            <p>In CSS, a period <code>.</code> selects a <strong>class</strong>. So this rule means "Find any element with the nickname 'container' and apply these styles."</p>
+            <ul>
+                <li><code>width: 800px;</code>: We're setting a fixed width. This stops our content from stretching to the edges of a wide monitor.</li>
+                <li><code>margin: 0 auto;</code>: This is a classic centering trick. 'Margin' is the space *outside* an element. This rule means "0 margin on the top and bottom, and <code>auto</code> margin on the left and right." The browser automatically calculates equal margins, which perfectly centers the box.</li>
+                <li><code>background-color: #ffffff;</code>: We're making the card white, so it stands out from our gray page background.</li>
+                <li><code>padding: 20px;</code>: 'Padding' is the space *inside* the box, between the content and the edge of the box. <strong>Margin is outside, Padding is inside.</strong></li>
+                <li><code>border-radius: 8px;</code>: This just rounds the corners of our box.</li>
+                <li><code>box-shadow: ...;</code>: This adds a subtle shadow to give the card a 3D, 'floating' effect.</li>
+            </ul>
+        </div>
+
+        <h3>Step 8: Style Your Headings</h3>
+        <div class="concept-box">
+            <strong>Why Element Selectors?</strong>
+            <p><code>h1</code> and <code>h2</code> are <strong>Element Selectors</strong>. They find *every* <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> tag on the page and apply these styles. This is great for making all your headings consistent.</p>
+        </div>
+
+        <hr>
+
+        <h2>Module 3: Media & Better Structure</h2>
+        <p><strong>Goal:</strong> Explain semantic HTML and how to add media (images and links).</p>
+
+        <h3>Step 1-2: Add Images</h3>
+        <div class="concept-box">
+            <strong>Why an <code>images</code> folder?</strong>
+            <p>Same as our <code>css</code> folder: organization. All our images live here.</p>
+        </div>
+
+        <h3>Step 3: Refactor Your HTML</h3>
+        <div class="concept-box">
+            <strong>Why Refactor?</strong>
+            <p>We are about to <strong>refactor</strong> our code. This is a key programming term. It means we are *changing the structure* of our code to make it better, cleaner, or more efficient, *without* changing what it does.</p>
+            <p>We're replacing generic <code>&lt;div&gt;</code>s with <strong>Semantic Tags</strong>—tags that have *meaning*:</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>: This tag tells the browser and screen readers, "This is the top banner of the page."</li>
+                <li><code>&lt;main&gt;</code>: This tag says, "This is the *main, unique* content for this page."</li>
+                <li><code>&lt;footer&gt;</code>: This tag says, "This is the footer, the bottom of the page."</li>
+            </ul>
+            <p><strong>Why do this?</strong> 1) **Accessibility:** A screen reader can now say, "Now jumping to the main content." 2) **SEO:** Google understands your page structure better. 3) **Clarity:** It's much easier for *us* to read our own code.</p>
+        </div>
+
+        <h3>Step 4: Add New CSS</h3>
+        <div class="concept-box">
+            <strong>Why new selectors?</strong>
+            <ul>
+                <li><code>header { text-align: center; }</code>: We're telling the <code>&lt;header&gt;</code> element to center all its contents.</li>
+                <li><code>header img { ... }</code>: This is a <strong>Descendant Selector</strong>. It means "find any <code>&lt;img&gt;</code> tag that is *inside* a <code>&lt;header&gt;</code> tag." This is powerful because it *won't* style other images on our page.</li>
+                <li><code>border-radius: 50%;</code>: This is a great trick. If you have a perfect square (<code>width: 150px</code> and <code>height: 150px</code>), a border-radius of <code>50%</code> will make it a perfect *circle*.</li>
+                <li><code>&lt;a&gt;</code>: This is the <strong>Anchor</strong> tag. It's what makes the web a *web*. It creates hyperlinks. <code>href</code> is the *destination* of the link.</li>
+                <li><code>footer a { ... }</code>: Another descendant selector. "Style any <code>&lt;a&gt;</code> tag that's inside a <code>&lt;footer&gt;</code>."</li>
+                <li><code>footer a:hover { ... }</code>: This is a <strong>pseudo-class</strong>. It styles the link *only* when the user's mouse is hovering over it. We're adding the underline back on hover, which is a great visual cue for the user.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Module 4: Publishing Your Site (GitHub Pages)</h2>
+        <p><strong>Goal:</strong> Explain the Git workflow and the concept of "hosting."</p>
+        <p>"This is the final and most exciting part. Right now, your website only lives on your computer. We need to put it on a <strong>server</strong>—a special computer that's on 24/7."</p>
+        <p>"GitHub has a free service called <strong>GitHub Pages</strong> that will be our server."</p>
+
+        <h3>Step 1: Create a GitHub Repo</h3>
+        <div class="concept-box">
+            <strong>Why?</strong>
+            <p>A <strong>Repository</strong> (or 'repo') is just a folder for a project. We're creating a new, *empty* project folder on GitHub's servers. We make it <strong>Public</strong> so GitHub Pages can access it.</p>
+        </div>
+
+        <h3>Step 2: Clone Your Repo</h3>
+        <div class="concept-box">
+            <strong>Why <code>git clone</code>?</strong>
+            <p>This command means "go to this URL, <strong>copy</strong> that entire repository, and <strong>download</strong> it to my computer." We do this first to get a folder that is *already connected* to the cloud.</p>
+        </div>
+
+        <h3>Step 3: Move Your Files</h3>
+        <div class="concept-box">
+            <strong>Why?</strong>
+            <p>We are moving our local-only files (our <code>index.html</code>, <code>css</code>, and <code>images</code>) into the new, GitHub-connected folder.</p>
+        </div>
+
+        <h3>Step 4: Upload Your Files</h3>
+        <div class="concept-box">
+            <strong>Why? (The 3-Step-Git-Dance)</strong>
+            <p>This is the most important workflow for this class. You will do this *all the time*. It's three steps:</p>
+            <ol>
+                <li>
+                    <strong><code>git add .</code> (Stage)</strong><br>
+                    Think of this as putting your files into a cardboard box. You're *preparing* them to be saved. The <code>.</code> just means "add everything in this folder."
+                </li>
+                <li>
+                    <strong><code>git commit -m "..."</code> (Commit)</strong><br>
+                    This is the "save" step. You're sealing the box and writing a *message* on it (that's the <code>-m</code>). The message says *what* you did, like "Added portfolio website files."
+                </li>
+                <li>
+                    <strong><code>git push</code> (Push)</strong><br>
+                    This is the "upload" step. You are 'pushing' your 'commit' (the sealed box) from your computer up to the GitHub server.
+                </li>
+            </ol>
+        </div>
+
+        <h3>Step 5: Activate GitHub Pages</h3>
+        <div class="concept-box">
+            <strong>Why?</strong>
+            <p>Our code is on GitHub, but it's not a *website* yet. We just have to flip the switch.</p>
+            <p>When you go to <strong>Settings > Pages</strong> and select <code>main</code> and <code>/ (root)</code>, you are telling GitHub: "Hey, see this <code>main</code> branch? I want you to treat it as a live website. Look for an <code>index.html</code> file in the root folder and *serve* it to the public."</p>
+        </div>
+
+        <h3>Step 6: You're Live!</h3>
+        <div class="concept-box">
+            <strong>Why?</strong>
+            <p>It takes about 1-2 minutes for GitHub's servers to build and deploy your site. Once it's done, that URL is live on the internet. You've successfully built and deployed a real website!</p>
+        </div>
+
+    </div>
+</body>
+</html>

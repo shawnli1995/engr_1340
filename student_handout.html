@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGR 1340: Portfolio Mini-Project</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px 40px 40px 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            color: #005a9c;
+        }
+
+        h2 {
+            font-size: 1.75em;
+            color: #005a9c;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.25em;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            font-size: 1.05em;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #eef;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+            pre code {
+                background-color: transparent;
+                padding: 0;
+                font-size: 1em;
+            }
+
+        .checkpoint {
+            background-color: #fffbe6;
+            border: 1px solid #ffde8a;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+            .checkpoint h3 {
+                margin-top: 0;
+                color: #b8860b;
+            }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 ENGR 1340: Student Handout</h1>
+        <h2>Build Your First Personal Portfolio Website</h2>
+
+        <p><strong>Objective:</strong> This guide will walk you through building a 1-page "About Me" website from scratch. You'll learn the basics of HTML for structure, CSS for style, and how to host your site on the internet for free using GitHub Pages.</p>
+
+        <h3>Tools You'll Need:</h3>
+        <ul>
+            <li>A code editor (like <strong>VS Code</strong>)</li>
+            <li>A web browser (like <strong>Chrome</strong>)</li>
+            <li>A <strong>GitHub</strong> account</li>
+            <li><strong>Git</strong> installed on your computer</li>
+        </ul>
+
+        <hr>
+
+        <h2>Module 1: The "Skeleton" (HTML Content)</h2>
+        <p><strong>Goal:</strong> Create your first <code>index.html</code> file and learn how different HTML tags add content to your page.</p>
+
+        <ol>
+            <li><strong>Create Your Project Folder:</strong> On your computer (e.g., on your Desktop), create a new folder and name it <code>my-portfolio</code>.</li>
+            <li><strong>Open in VS Code:</strong> Open the VS Code application, then go to <code>File > Open Folder...</code> and select the <code>my-portfolio</code> folder.</li>
+            <li><strong>Create Your HTML File:</strong> In the VS Code sidebar, click the "New File" icon and name your file <code>index.html</code>.</li>
+            <li><strong>Add the HTML "Boilerplate":</strong> In the empty <code>index.html</code> file, type <code>!</code> and press the <code>Tab</code> key. This is a shortcut that fills in the basic HTML skeleton.</li>
+            <li>
+                <strong>Change Your Title:</strong>
+                <ul>
+                    <li>Find the <code>&lt;title&gt;Document&lt;/title&gt;</code> line inside the <code>&lt;head&gt;</code>.</li>
+                    <li>Change the word "Document" to <code>Your Name - Portfolio</code> (e.g., <code>Gaoxiang Li - Portfolio</code>).</li>
+                    <li><strong>Save your file</strong> (Ctrl+S or Cmd+S). Open it in your browser. Look at the browser tab—it should now show your name!</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Add Your Main Heading:</strong>
+                <ul>
+                    <li>Inside the <code>&lt;body&gt;</code> tags, add your first HTML tag.</li>
+                    <li>Type: <code>&lt;h1&gt;Your Name&lt;/h1&gt;</code> (replace "Your Name" with your actual name).</li>
+                    <li><strong>Save your file.</strong> Go to your browser and <strong>refresh the page</strong>. You should see your name in large, bold text.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Add a Subheading:</strong>
+                <ul>
+                    <li>On the next line *after* your <code>&lt;h1&gt;</code>, add a secondary heading.</li>
+                    <li>Type: <code>&lt;h2&gt;First-Year Engineering Student&lt;/h2&gt;</code></li>
+                    <li><strong>Save your file.</strong> Go back to your browser and <strong>refresh</strong>. You'll see a slightly smaller heading.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Add a Section with a Paragraph:</strong>
+                <ul>
+                    <li>
+                        On the next lines, type:
+<pre><code>&lt;h2&gt;About Me&lt;/h2&gt;
+&lt;p&gt;
+    Hello! I am a student at [Your University] studying [Your Major]. 
+    I am passionate about building new things and solving problems.
+&lt;/p&gt;</code></pre>
+                    </li>
+                    <li><strong>Save your file</strong> and <strong>refresh</strong> your browser.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Add a Section with a List:</strong>
+                <ul>
+                    <li>
+                        On the next lines, type:
+<pre><code>&lt;h2&gt;My Interests&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li&gt;Coding & Software&lt;/li&gt;
+    &lt;li&gt;Robotics&lt;/li&gt;
+    &lt;li&gt;3D Printing&lt;/li&gt;
+    &lt;li&gt;[Another Interest]&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </li>
+                    <li><strong>Save your file</strong> and <strong>refresh</strong> your browser.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="checkpoint">
+            <h3>Checkpoint 1</h3>
+            <p>You've now built a complete, unstyled webpage! Your final <code>index.html</code> code should look like this:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Name - Portfolio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Your Name&lt;/h1&gt;
+    &lt;h2&gt;First-Year Engineering Student&lt;/h2&gt;
+
+    &lt;h2&gt;About Me&lt;/h2&gt;
+    &lt;p&gt;
+        Hello! I am a student at [Your University] studying [Your Major]. 
+        I am passionate about building new things and solving problems.
+    &lt;/p&gt;
+
+    &lt;h2&gt;My Interests&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Coding & Software&lt;/li&gt;
+        &lt;li&gt;Robotics&lt;/li&gt;
+        &lt;li&gt;3D Printing&lt;/li&gt;
+        &lt;li&gt;[Another Interest]&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <hr>
+
+        <h2>Module 2: The "Skin" (Basic CSS)</h2>
+        <p><strong>Goal:</strong> Add style to your page with colors, fonts, and a centered layout.</p>
+
+        <ol>
+            <li><strong>Create Your CSS Folder:</strong> In VS Code, in the sidebar, click the "New Folder" icon to create a folder. Name it <code>css</code>.</li>
+            <li><strong>Create Your CSS File:</strong> Right-click the new <code>css</code> folder and select "New File". Name it <code>styles.css</code>.</li>
+            <li>
+                <strong>Link Your CSS (Critical Step!):</strong> Go back to <code>index.html</code>. In the <code>&lt;head&gt;</code> section, *after* the <code>&lt;title&gt;</code> line, add this one line of code:
+<pre><code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code></pre>
+            </li>
+            <li>
+                <strong>Test the Link:</strong> Open <code>styles.css</code> and add your very first CSS rule:
+<pre><code>body {
+    background-color: #f0f4f8; /* A light gray background */
+}</code></pre>
+                <ul>
+                    <li><strong>Save both files</strong> (<code>index.html</code> and <code>styles.css</code>).</li>
+                    <li>Go to your browser and <strong>refresh</strong>. Your page background should now be light gray!</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Improve the Font:</strong> In your <code>styles.css</code> file, add more rules inside the <code>body</code> selector:
+<pre><code>body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;    /* A clean, simple font */
+    line-height: 1.6;                  /* Space between lines of text */
+}</code></pre>
+                <ul>
+                    <li><strong>Save <code>styles.css</code></strong> and <strong>refresh</strong> your browser.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Center Your Content:</strong>
+                <ul>
+                    <li>Go to <code>index.html</code>. Add <code>&lt;div class="container"&gt;</code> right *after* the opening <code>&lt;body&gt;</code> tag.</li>
+                    <li>Add a closing <code>&lt;/div&gt;</code> tag right *before* the closing <code>&lt;/body&gt;</code> tag.</li>
+                </ul>
+<pre><code>&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;!-- All your h1, h2, p, ul content goes here --&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+            </li>
+            <li>
+                <strong>Style the Container:</strong> In <code>styles.css</code>, add this new rule:
+<pre><code>.container {
+    width: 800px;                      /* Set a fixed width */
+    margin: 0 auto;                    /* A trick to center the box */
+    background-color: #ffffff;         /* A white background for the box */
+    padding: 20px;                     /* Space inside the box */
+    border-radius: 8px;                /* Nice rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* A subtle drop shadow */
+}</code></pre>
+                <ul>
+                    <li><strong>Save both files</strong> and <strong>refresh</strong> your browser.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Style Your Headings:</strong> Add these rules to <code>styles.css</code>:
+<pre><code>h1 {
+    color: #333;
+}
+
+h2 {
+    color: #005a9c; /* A nice blue color */
+    border-bottom: 2px solid #f0f4f8; /* A line underneath */
+    padding-bottom: 5px;
+}</code></pre>
+                <ul>
+                    <li><strong>Save <code>styles.css</code></strong> and <strong>refresh</strong>.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <hr>
+
+        <h2>Module 3: Media & Better Structure</h2>
+        <p><strong>Goal:</strong> Add a profile picture, links, and organize your HTML into "semantic" (meaningful) tags.</p>
+
+        <ol>
+            <li><strong>Create an <code>images</code> Folder:</strong> In VS Code, create another new folder at the top level (next to <code>css</code>). Name it <code>images</code>.</li>
+            <li><strong>Add Your Photo:</strong> Find a professional-looking photo of yourself, name it <code>profile.jpg</code> (or <code>.png</code>), and move it into your new <code>images</code> folder.</li>
+            <li>
+                <strong>Refactor Your HTML:</strong> Go to <code>index.html</code> and replace *everything* inside your <code>&lt;div class="container"&gt;</code> with this new, organized structure. (Copy and paste, then fill in your info again).
+<pre><code>&lt;div class="container"&gt;
+    &lt;header&gt;
+        &lt;img src="images/profile.jpg" alt="A photo of [Your Name]"&gt;
+        &lt;h1&gt;Your Name&lt;/h1&gt;
+        &lt;h2&gt;First-Year Engineering Student&lt;/h2&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section class="about-me"&gt;
+            &lt;h2&gt;About Me&lt;/h2&gt;
+            &lt;p&gt;
+                Hello! I am a student at [Your University]...
+            &lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section class="interests"&gt;
+            &lt;h2&gt;My Interests&lt;/h2&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Coding & Software&lt;/li&gt;
+                &lt;li&gt;Robotics&lt;/li&gt;
+                &lt;li&gt;3D Printing&lt;/li&gt;
+                &lt;li&gt;[Another Interest]&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025 Your Name&lt;/p&gt;
+        &lt;p&gt;
+            &lt;a href="https://www.linkedin.com"&gt;Find me on LinkedIn&lt;/a&gt; | 
+            &lt;a href="https://github.com"&gt;See my GitHub&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+            </li>
+            <li>
+                <strong>Add New CSS:</strong>
+                <ul>
+                    <li><strong>Save <code>index.html</code></strong> and <strong>refresh</strong> your browser. Your image is probably huge!</li>
+                    <li>Open <code>styles.css</code> and add these new rules at the bottom.</li>
+                </ul>
+<pre><code>header {
+    text-align: center; /* Center the header content */
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* This makes the image a circle */
+    border: 4px solid #ffffff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f4f8; /* A line to separate the footer */
+    font-size: 0.9em;
+    color: #777;
+}
+
+footer a {
+    color: #005a9c; /* Use the same blue as our h2 */
+    text-decoration: none; /* Remove the underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline back on hover */
+}</code></pre>
+            </li>
+            <li><strong>Save <code>styles.css</code></strong> and <strong>refresh</strong> your browser. You now have a beautiful, complete portfolio page!</li>
+        </ol>
+
+        <hr>
+
+        <h2>Module 4: Publishing Your Site (GitHub Pages)</h2>
+        <p><strong>Goal:</strong> Put your new website on the live internet for anyone to see.</p>
+
+        <ol>
+            <li>
+                <strong>Create a GitHub Repo:</strong>
+                <ul>
+                    <li>Log in to <strong>GitHub.com</strong>. Click the <strong>+</strong> in the top-right and select <strong>New repository</strong>.</li>
+                    <li>Repository name: <code>my-portfolio</code></li>
+                    <li>Set it to <strong>Public</strong>.</li>
+                    <li>Check the box for <strong>Add a README file</strong>.</li>
+                    <li>Click <strong>Create repository</strong>.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Clone Your Repo:</strong>
+                <ul>
+                    <li>On your new repo's page, click the green <strong>&lt; &gt; Code</strong> button and copy the <strong>HTTPS</strong> URL.</li>
+                    <li>Open your terminal (Git Bash or Terminal).</li>
+                    <li>Navigate to your Desktop (or a folder *outside* your project): <code>cd Desktop</code></li>
+                    <li>**Important:** Rename your *local* folder from <code>my-portfolio</code> to <code>my-portfolio-OLD</code>.</li>
+                    <li>
+                        In your terminal, clone the new repo:
+<pre><code>git clone https://github.com/YourUsername/my-portfolio.git</code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Move Your Files:</strong>
+                <ul>
+                    <li>Open your *original* <code>my-portfolio-OLD</code> folder.</li>
+                    <li>Copy your <code>index.html</code> file, your <code>css</code> folder, and your <code>images</code> folder.</li>
+                    <li>Paste them into the *new* <code>my-portfolio</code> folder that Git just created.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Upload Your Files (in Terminal):</strong>
+                <ul>
+                    <li>Navigate *into* the new GitHub-connected folder: <code>cd my-portfolio</code></li>
+                    <li>
+                        Run these three commands, one by one:
+<pre><code>git add .</code></pre>
+<pre><code>git commit -m "Add portfolio website files"</code></pre>
+<pre><code>git push</code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Activate GitHub Pages:</strong>
+                <ul>
+                    <li>Go back to your GitHub repo page in your browser.</li>
+                    <li>Click the <strong>Settings</strong> tab.</li>
+                    <li>Click <strong>Pages</strong> on the left menu.</li>
+                    <li>Under "Build and deployment," find <strong>Branch</strong>.</li>
+                    <li>Select the <code>main</code> branch and <code>/ (root)</code> folder.</li>
+                    <li>Click <strong>Save</strong>.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>You're Live!</strong>
+                <ul>
+                    <li>Wait 1-2 minutes. Refresh the <strong>Pages</strong> screen.</li>
+                    <li>GitHub will show you a green box with your live URL: <strong><code>https://YourUsername.github.io/my-portfolio</code></strong></li>
+                    <li>Congratulations! You've built and deployed your first website!</li>
+                </ul>
+            </li>
+        </ol>
+
+    </div>
+</body>
+</html>
